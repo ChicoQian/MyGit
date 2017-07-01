@@ -1,0 +1,24 @@
+RESTful Web 服务应该定义以下方面：
+
+Web 服务的基/根 URI，比如 http://host/<appcontext>/resources。
+支持 MIME 类型的响应数据，包括 JSON/XML/ATOM 等等。
+服务支持的操作集合（例如 POST、GET、PUT 或 DELETE）。
+表 1. RESTful Web 服务示例
+方法/资源	资源集合， URI 如：
+http://host/<appctx>/resources
+GET	列出资源集合的所有成员。
+PUT	使用一个集合更新（替换）另一个集合。
+POST	在集合中创建数字资源，其 ID 是自动分配的。
+DELETE	删除整个资源集合。
+
+开发 REST 服务（https://www.ibm.com/developerworks/cn/web/wa-aj-tomcat/#artdownload）
+现在，您已经设置好了开发第一个 REST 服务的环境，该服务对客户端发出 “Hello”。
+要做到这一点，您需要将所有的 REST 请求发送到 Jersey 容器 —— 在应用程序的 web.xml 文件中定义 servlet 调度程序（参见清单 1）。除了声明 Jersey servlet 外，它还定义一个初始化参数，指示包含资源的 Java 包。
+
+
+TestNG与Junit之间的区别（http://blog.csdn.net/luozhuwang/article/details/14646839）
+
+1.对于注解类的支持
+2.定义测试任务
+3.测试参数化
+4.测试依赖性

@@ -1,0 +1,42 @@
+ES6/ES2015核心内容：https://segmentfault.com/a/1190000004365693
+Knockout应用开发指南（完整版） 目录索引：http://www.cnblogs.com/TomXu/archive/2011/11/21/2257154.html
+require.js的用法：http://www.ruanyifeng.com/blog/2012/11/require_js.html
+qunit：http://www.bkjia.com/webzh/959840.html
+       http://www.zhangxinxu.com/wordpress/2013/04/qunit-javascript-unit-test-%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/
+jQuery Ajax：http://www.cnblogs.com/jayleke/archive/2012/08/10/2633174.html
+
+
+
+OracleJET 
+布局（Oracle JET Grids） oj-flex -> oj-flex-item -> oj-md-6 （一共12）
+display: large() ? 'all' : 'icons' 图标的展示
+
+组件：ojs/ojcomponent:在Require中率先定义，eg："ojComponent: {component: 'ojButtonset
+
+main-release-paths.json：第三方工具
+
+router
+配置
+router.configure({
+   'home':   { label: 'Home',   value: 'homeContent', isDefault: true },
+   'book':   { label: 'Book',   value: 'bookContent' },
+   'tables': { label: 'Tables', value: 'tablesContent' }
+});
+子路由
+router = oj.Router.rootInstance;
+childRouter = router.createChildRouter('chapter');
+获取
+ var orderStateId = this.orderRouter.stateId();
+走
+1、selection: router.stateId（NAV bar）
+2、router.go('home'): transition router to state id 'home'
+router.go('/book/chapt2'): transition the root instance to state id 'book' and the child router to state id 'chapt2'
+router.go('chapt2/edit'): transition router to state id 'chapt2' and child router to state id 'edit'
+
+组件（按钮）示例
+<button id= "button"
+        data-bind="click: buttonClick,
+                   ojComponent: { component: 'ojButton', label: 'A button element' }">
+
+promise
+http://wiki.jikexueyuan.com/project/es6/promise.html

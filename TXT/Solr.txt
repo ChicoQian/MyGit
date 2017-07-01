@@ -1,0 +1,28 @@
+Solr 
+Solr_Home -> web.xml
+搜索“天下”
+http://127.0.0.1:8080/solr/core1/select?q=%E5%A4%A9%E4%B8%8B&wt=json&indent=true
+索引文件：
+D:\solr_home\solr\core1\conf\schema.xml
+数据库
+D:\solr_home\solr\core1\conf\data-config.xml
+Field
+在Solr中，字段(Field)是构成Document的基本单元。对应于数据库表中的某一列。字段是包括了名称，类型以及对字段对应的值如何处理的一种元数据。比如：
+
+<field name="name" type="text_general" indexed="true" stored="true"/>
+Indexed：Indexed=true时，表示字段会加被Sorl处理加入到索引中，只有被索引的字段才能被搜索到。
+Stored：Stored=true，字段值会以保存一份原始内容在在索引中，可以被搜索组件组件返回，考虑到性能问题，对于长文本就不适合存储在索引中。
+Field Type
+Solr中每个字段都有一个对应的字段类型，比如：float、long、double、date、text，Solr提供了丰富字段类型，同时，我们还可以自定义适合自己的数据类型
+
+索引(http://www.importnew.com/12707.html)
+
+Solr/Lucene采用的是一种反向索引，所谓反向索引：就是从关键字到文档的映射过程，保存这种映射这种信息的索引称为反向索引
+
+inverted_index_thumb.jpg
+
+左边保存的是字符串序列
+右边是字符串的文档（Document）编号链表，称为倒排表（Posting List）
+字段串列表和文档编号链表两者构成了一个字典。现在想搜索”lucene”，那么索引直接告诉我们，包含有”lucene”的文档有：2，3，10，35，92，而无需在整个文档库中逐个查找。如果是想搜既包含”lucene”又包含”solr”的文档，那么与之对应的两个倒排表去交集即可获得：3、10、35、92。
+
+SolrJ(http://blog.csdn.net/u012385190/article/details/53115546)
