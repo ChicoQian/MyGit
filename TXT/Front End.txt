@@ -1,42 +1,43 @@
-ES6/ES2015ºËĞÄÄÚÈİ£ºhttps://segmentfault.com/a/1190000004365693
-KnockoutÓ¦ÓÃ¿ª·¢Ö¸ÄÏ£¨ÍêÕû°æ£© Ä¿Â¼Ë÷Òı£ºhttp://www.cnblogs.com/TomXu/archive/2011/11/21/2257154.html
-require.jsµÄÓÃ·¨£ºhttp://www.ruanyifeng.com/blog/2012/11/require_js.html
-qunit£ºhttp://www.bkjia.com/webzh/959840.html
+ES6/ES2015æ ¸å¿ƒå†…å®¹ï¼šhttps://segmentfault.com/a/1190000004365693
+Knockoutåº”ç”¨å¼€å‘æŒ‡å—ï¼ˆå®Œæ•´ç‰ˆï¼‰ ç›®å½•ç´¢å¼•ï¼šhttp://www.cnblogs.com/TomXu/archive/2011/11/21/2257154.html
+require.jsçš„ç”¨æ³•ï¼šhttp://www.ruanyifeng.com/blog/2012/11/require_js.html
+qunitï¼šhttp://www.bkjia.com/webzh/959840.html
        http://www.zhangxinxu.com/wordpress/2013/04/qunit-javascript-unit-test-%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/
-jQuery Ajax£ºhttp://www.cnblogs.com/jayleke/archive/2012/08/10/2633174.html
+jQuery Ajaxï¼šhttp://www.cnblogs.com/jayleke/archive/2012/08/10/2633174.html
 
 
 
 OracleJET 
-²¼¾Ö£¨Oracle JET Grids£© oj-flex -> oj-flex-item -> oj-md-6 £¨Ò»¹²12£©
-display: large() ? 'all' : 'icons' Í¼±êµÄÕ¹Ê¾
+å¸ƒå±€ï¼ˆOracle JET Gridsï¼‰ oj-flex -> oj-flex-item -> oj-md-6 ï¼ˆä¸€å…±12ï¼‰
+display: large() ? 'all' : 'icons' å›¾æ ‡çš„å±•ç¤º
 
-×é¼ş£ºojs/ojcomponent:ÔÚRequireÖĞÂÊÏÈ¶¨Òå£¬eg£º"ojComponent: {component: 'ojButtonset
+ç»„ä»¶ï¼šojs/ojcomponent:åœ¨Requireä¸­ç‡å…ˆå®šä¹‰ï¼Œegï¼š"ojComponent: {component: 'ojButtonset
 
-main-release-paths.json£ºµÚÈı·½¹¤¾ß
+main-release-paths.jsonï¼šç¬¬ä¸‰æ–¹å·¥å…·
 
 router
-ÅäÖÃ
+é…ç½®
 router.configure({
    'home':   { label: 'Home',   value: 'homeContent', isDefault: true },
    'book':   { label: 'Book',   value: 'bookContent' },
    'tables': { label: 'Tables', value: 'tablesContent' }
 });
-×ÓÂ·ÓÉ
+å­è·¯ç”±
 router = oj.Router.rootInstance;
 childRouter = router.createChildRouter('chapter');
-»ñÈ¡
+è·å–
  var orderStateId = this.orderRouter.stateId();
-×ß
-1¡¢selection: router.stateId£¨NAV bar£©
-2¡¢router.go('home'): transition router to state id 'home'
+èµ°
+1ã€selection: router.stateIdï¼ˆNAV barï¼‰
+2ã€router.go('home'): transition router to state id 'home'
 router.go('/book/chapt2'): transition the root instance to state id 'book' and the child router to state id 'chapt2'
 router.go('chapt2/edit'): transition router to state id 'chapt2' and child router to state id 'edit'
 
-×é¼ş£¨°´Å¥£©Ê¾Àı
+ç»„ä»¶ï¼ˆæŒ‰é’®ï¼‰ç¤ºä¾‹
 <button id= "button"
         data-bind="click: buttonClick,
                    ojComponent: { component: 'ojButton', label: 'A button element' }">
 
 promise
 http://wiki.jikexueyuan.com/project/es6/promise.html
+https://segmentfault.com/a/1190000002928371
